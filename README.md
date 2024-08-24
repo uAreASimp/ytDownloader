@@ -75,11 +75,11 @@ i got tired of ass youtube download websites having viruses
   ```
 - Specify an output directory with the `-o` option:
   ```
-  ytdownload https://www.youtube.com/watch?v=your_video_id -o "C:\path\to\your\output\directory"
+  ytdownload -o "C:\path\to\your\output\directory https://www.youtube.com/watch?v=your_video_id"
   ```
 - Full usage:
   ```
-  ytdownload https://www.youtube.com/watch?v=your_video_id mp3 -o "C:\path\to\your\output\directory"
+  ytdownload -o "C:\path\to\your\output\directory https://www.youtube.com/watch?v=your_video_id mp3 "
   ```
 
 ## Troubleshooting
