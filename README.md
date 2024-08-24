@@ -83,6 +83,6 @@ This project does not include a specific license. You are free to use and modify
 
 ## Contact
 
-For any questions or issues, please open an issue in the GitHub repository: [https://github.com/yourusername/yourrepository/issues](https://github.com/uAreASimp/ytDownloader/issues)
+For any questions or issues, please open an issue in the GitHub repository: https://github.com/uAreASimp/ytDownloader/issues
 
 Happy downloading and converting!
