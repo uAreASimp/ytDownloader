@@ -6,14 +6,14 @@ i got tired of ass youtube download websites having viruses
 ### 1. Download the Repository
 
 1. **Clone the repository**:
-```
-git clone https://github.com/uAreASimp/ytDownloader.git
-```
+  ```
+  git clone https://github.com/uAreASimp/ytDownloader.git
+  ```
 
 2. **Navigate to the repository directory**:
-```
-cd ytDownloader
-```
+  ```
+  cd ytDownloader
+  ```
 
 ### 2. Create a Batch File
 
@@ -23,7 +23,7 @@ cd ytDownloader
   @echo off
   python "C:\path\to\your\script\download_youtube.py" %*
   ```
-- **Update the script path**: Replace `C:\path\to\your\script\download_youtube.py` with the actual path to the `download_youtube.py` script in your repository.
+- **Update the script path**: Replace `C:\path\to\your\script\ytdownload.py` with the actual path to the `ytdownload.py` script in your repository.
 
 ### 3. Add the Batch File to Your PATH
 
