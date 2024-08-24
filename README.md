@@ -63,13 +63,23 @@ i got tired of ass youtube download websites having viruses
 
 1. **Open a Command Prompt**.
 2. **Run the script**:
-- Use the following command to download a YouTube video and convert it to MP4 format:
+- Use the following command to download a YouTube video:
   ```
   ytdownload https://www.youtube.com/watch?v=your_video_id
   ```
-- **Optional**: Specify an output directory with the `-o` option:
+
+- **Optional**: 
+- You can also choose between mp3, wav and mp4. It is mp4 by default:
+  ```
+  ytdownload https://www.youtube.com/watch?v=your_video_id [type]
+  ```
+- Specify an output directory with the `-o` option:
   ```
   ytdownload https://www.youtube.com/watch?v=your_video_id -o "C:\path\to\your\output\directory"
+  ```
+- Full usage:
+  ```
+  ytdownload https://www.youtube.com/watch?v=your_video_id mp3 -o "C:\path\to\your\output\directory"
   ```
 
 ## Troubleshooting
