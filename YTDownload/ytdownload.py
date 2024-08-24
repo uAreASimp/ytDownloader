@@ -30,6 +30,9 @@ def download_youtube_video(url, output_path='.', file_type='mp4'):
             convert_video(filename, output_path)
         
         print("Operation completed successfully!")
+        
+        # Open the file explorer at the output directory
+        open_file_explorer(output_path)
     
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -100,6 +103,17 @@ def convert_video(input_file, output_path):
         print(f"Converted video saved to: {output_file}")
     except subprocess.CalledProcessError as e:
         print(f"Error during conversion: {e}")
+
+def open_file_explorer(path):
+    try:
+        if sys.platform == 'win32':
+            os.startfile(path)
+        elif sys.platform == 'darwin':
+            subprocess.Popen(['open', path])
+        else:
+            subprocess.Popen(['xdg-open', path])
+    except Exception as e:
+        print(f"Failed to open file explorer: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Download YouTube videos and convert to specified file format.")
