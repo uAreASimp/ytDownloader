@@ -1,10 +1,44 @@
 # ytDownloader
 i got tired of ass youtube download websites having viruses
 
-## Setup Instructions
+## New YTDownloader
+===============
+#### 1. Download the EXE
+---------------------------
+
+1. **Download the EXE**:
+  - Download the EXE [here](NewYTDownload/ytDownloader.exe).
+2. **Run the EXE**:
+  - Run the EXE by either double clicking or right clicking and opening/running.
+3. **It should be open now**:
+  - It should be open now.
+
+![MainMenu](Images/NormalGUI.png)
+
+#### 2. How to use
+---------------------------
+
+1. **Youtube URL**:
+  - Copy the link to the youtube video.
+  - Paste it into the box beside "YouTube URL:".
+2. **Output Directory**:
+  - This is where the video/audio file will be saved.
+  - Default Directory is [USER]/Videos/Youtube/
+3. **Format**:
+  - This is the format of the file
+  - Currently supports mp4, mp3 and wav.
+4. **Open dir after download**:
+  - It opens the directory after downloading
+5. **Download**:
+  - The button that downloads the file.
+
+
+## Old YTDownloader
+---------------------------
+### Setup Instructions
 ===============
 
-### 1. Download the Repository
+#### 1. Download the Repository
 ---------------------------
 
 1. **Clone the repository**:
@@ -17,7 +51,7 @@ i got tired of ass youtube download websites having viruses
   ```
 
 
-### 2. Use the Example Batch File
+#### 2. Use the Example Batch File
 -----------------------------
 
 1. **Locate the example batch file**:
@@ -28,7 +62,7 @@ i got tired of ass youtube download websites having viruses
 3. **Rename and move the batch file**:
 - Rename the file to `ytdownload.bat` and move it to a directory of your choice.
 
-### 3. Add the Batch File to Your PATH
+#### 3. Add the Batch File to Your PATH
 ----------------------------------
 
 1. **Add the batch file directory to the PATH**:
@@ -39,7 +73,7 @@ i got tired of ass youtube download websites having viruses
   ```
 - Replace `C:\path\to\your\batch\file` with the actual directory where `ytdownload.bat` is located.
 
-### 4. Download and Install FFmpeg
+#### 4. Download and Install FFmpeg
 -------------------------------
 
 1. **Download FFmpeg**:
@@ -47,7 +81,7 @@ i got tired of ass youtube download websites having viruses
 2. **Extract the FFmpeg files**:
 - Extract the downloaded archive to a location on your PC, for example, `C:\ffmpeg`.
 
-### 5. Add FFmpeg to Your PATH
+#### 5. Add FFmpeg to Your PATH
 --------------------------
 
 1. **Add the FFmpeg `bin` directory to the PATH**:
@@ -58,7 +92,7 @@ i got tired of ass youtube download websites having viruses
   ```
 - Replace `C:\ffmpeg\bin` with the actual path to the `bin` directory inside your FFmpeg installation.
 
-### 6. Install Python and Required Libraries
+#### 6. Install Python and Required Libraries
 ----------------------------------------
 
 1. **Install Python**:
@@ -69,7 +103,7 @@ i got tired of ass youtube download websites having viruses
   pip install yt-dlp
   ```
 
-### 7. Using the Script
+#### 7. Using the Script
 -------------------
 
 1. **Open a Command Prompt**.
@@ -92,19 +126,19 @@ i got tired of ass youtube download websites having viruses
     ytdownload -o "C:\path\to\your\output\directory" https://www.youtube.com/watch?v=your_video_id mp3
     ```
 
-## Troubleshooting
+### Troubleshooting
 ===============
 
 - **Conversion Errors**: Ensure FFmpeg is correctly installed and added to your PATH. Check the command prompt output for any FFmpeg error messages.
 - **Permission Issues**: Run the command prompt as an administrator if you encounter permission issues.
 - **No Response in CMD**: Your python installation may not have worked, try installing python again from either [python.org](https://www.python.org/downloads/) or the Microsoft Store.
 
-## License
+### License
 =======
 
 This project does not include a specific license. You are free to use and modify the code, but please ensure compliance with YouTube's Terms of Service and any applicable laws.
 
-### Contact
+#### Contact
 =======
 
 For any questions or issues, please open an issue in the GitHub repository: https://github.com/uAreASimp/ytDownloader/issues
