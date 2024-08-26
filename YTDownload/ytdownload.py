@@ -73,8 +73,8 @@ def convert_file(input_file, output_path, file_type):
         return
     
     try:
-        # Run the ffmpeg command
-        subprocess.run(command, check=True)
+        # Run the ffmpeg command without opening a command prompt window
+        subprocess.run(command, check=True, creationflags=subprocess.CREATE_NO_WINDOW)
         # Remove the original file if conversion was successful
         os.remove(input_file)
         print(f"Converted file saved to: {output_file}")
@@ -96,8 +96,8 @@ def convert_video(input_file, output_path):
     ]
     
     try:
-        # Run the ffmpeg command
-        subprocess.run(command, check=True)
+        # Run the ffmpeg command without opening a command prompt window
+        subprocess.run(command, check=True, creationflags=subprocess.CREATE_NO_WINDOW)
         # Remove the original file if conversion was successful
         os.remove(input_file)
         print(f"Converted video saved to: {output_file}")
